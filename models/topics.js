@@ -7,7 +7,6 @@ var topicsSchema = new Schema({
   topics: {
     type: String,
     required: true,
-    unique: true
   },
  
   summary: {
@@ -27,6 +26,6 @@ var topicsSchema = new Schema({
   }
 });
 
-var Topics = mongoose.model("Topics", topicSchema);
+var Topics = mongoose.model("Topics", topicsSchema);
 
 module.exports = Topics;

@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(router);
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var db = process.env.MONGODB_URI || "mongodb://127.0.0.1/mongoHeadlines";
 
 mongoose.connect(db, function(error) {
  
